@@ -1,7 +1,7 @@
 \documentclass{article}
 \usepackage{enumitem}
 \title{MSAE E4215 Homework \#1}
-\author{Yitian Wang}
+\author{Yitian Wang\\UNI: yw3378}
 \date{Columbia University \\ \today}
 
 
@@ -20,42 +20,60 @@ apply taylor series expansion on the U(d) near $d=d_0$, we have:
 $$U(d) \simeq U_{0}+\frac{f}{2 !} u^{2}+\frac{g}{3 !} u^{3}+\frac{h}{4 !} u^{4} \cdots$$
 $$U(d)=D(-1 + 0 + a^2(d-d_0)^2 + {-a}^3(d-d_0)^3 + \cdots) $$
 the spring constant $f$ is:
-$$f=\frac{\partial^2 U}{\partial d^2}=2Da^2$$
+$$f=\frac{\partial^2 U}{\partial d^2}=2Da^2 = 1268.8256 \ meV\cdot A^{-2}‬$$
 
-\item Calculate the anharmonic coefficient $g$ and parameters
+\item Calculate the anharmonic coefficient $g$ and parameter $s$
 in this case, refering to the expression in the notes:
-$$f=2Da^2$$
-$$g=-6Da^3$$
-$$s=\frac{g}{2f}=-\frac{3}{2} a $$
+%$$f=2Da^2$$
+$$g=-6Da^3= -5176.808448 \ meV\cdot A^{-3}‬$$
+$$s=\frac{g}{2f}=-\frac{3}{2} a = -2.04 \ A^{-1} $$
 \item Calculate the coefficient of thermal expansion $a$ for the bond
 from the notes, the thermal expansion coefficient is :
 $$a= -s \frac{k_B}{d_0 f} $$
+$$ k_B=8.6173 \times 10^{-2} meV \cdot K^{-1}$$
+$$d_0=0.209\ nm=2.09\ A $$
+$$ a= -s \frac{k_B}{d_0 f} =  6.6291 \times 10^{-5}\cdot K^{-1}$$
 
 \item Estimate the ratio of elastic modulus at room temperature to that at zero temperature,
 E(300K)/E(0K) considering one bond only. For (FCC) Cu, with lattice parameter 0.36nm.
 
 $$
-\frac{E(T)}{E(0)}=1-\frac{2 s^{2} k_{B}}{f} T =
+\frac{E(T)}{E(0)}=1-\frac{2 s^{2} k_{B}}{f} T = 83.0417 \%
 $$
 \item calculate the cohesive energy. For simplicity, consider only nearest-neighbor interactions (12 in the crystal).
-
+The total cohesive energy is:
+$$ U_{total}=\Sigma^{12}_{1} U(d) $$
+from the geometry of FCC structure, 
+we know that $a=0.36nm=3.60 A $, $d_0=0.209nm=2.09A$
+$$ d=\frac{\sqrt{2}}{2} \cdot a = 2.5456 A $$
+$$U(d) =D(e^{-2a(d - d_0)} - 2e^{ - a(d - d_0)}) =-269.84\ meV$$
+$$U_{total}=12\times U(d)=-3.2381 eV $$
 \end{enumerate}
 
 
 \item Estimate the yield strength for an absolutely perfect single crystal of Fe 
-(and compare with the experimental value)
+(and compare with the experimental value)\\
+For Fe, the Young's modulus E=210GPa. The estimate yield stress for tension is
+$\sigma_y = E/6= 35GPa$. The actual yield stress is 12GPa.
 
-\item How is the yield strength defined, conventionally? 
-Yield strength represents the stress applied to the material 
-under which the material is plastically deformed.
-\item Brittle or ductile failure: what is better for a structural metal in tension, 
-and why?
+\item How is the yield strength defined, conventionally?\\ 
+Yield strength represents the maxium elastic stress or minimum plastic stress. In microscopical view, 
+it is the stress that make the largest possible strain under the original structure.
+\item Brittle or ductile failure: what is better for a structural metal in tension, and why?\\
+Ductile failure is better for a structural metal because it will 
+gradually deform the structure instead of collapse in a sudden as the brittle failure, providing
+a more predictable progress.
 
-\item Why might you want to deform a metal plastically? 
-Sometime plastic deformation might be a approach to shape the matal into certain product. 
+\item Why might you want to deform a metal plastically? \\
+Sometime plastic deformation might be a good approach 
+to shape the metal into certain product, 
+for example, the metal chain production.
 
-\item Examine the stress-strain curve of a perfect Fe whisker (in the presentation, or see notes.)  
-a) is it linearly elastic?  b) is it elastic? 
+\item Examine the stress-strain curve of a perfect Fe whisker (in the presentation, or see notes.) a) is it linearly elastic?  b) is it elastic? \\
+It is not linearly elastic for the Young's modulus is not constant with elongation.\\
+It is elastic at when the stress us below certain point, 
+but is becomes plastic when the stress is high enough.
+
 
 
 
